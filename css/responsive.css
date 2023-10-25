@@ -1,0 +1,29 @@
+@media screen and (min-width:1060px) {
+    .team a::after{
+        content: "("attr(data-email)")";
+        color: gray;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:1060px) and (min-width:900px) {
+    .team a::after{
+        content: "("attr(data-email)")";
+        color: gray;
+        font-size: 15px;
+    }
+    img{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:600px) {
+    .team a::before{
+        content: "Email: ";
+        color: gray;
+        font-size: 15px;
+    }
+    img{
+        display: none;
+    }
+}
